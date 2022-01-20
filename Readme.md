@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий1408 Шентяков](https://up.htmlacademy.ru/htmlcss/33/user/1692153).
-* Наставник: `Неизвестно`.
+* Наставник: Арсений Березин. (https://up.htmlacademy.ru/profession/frontender/13/htmlcss/user/263537)
 
 ---
 
