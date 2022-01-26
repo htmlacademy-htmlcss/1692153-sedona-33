@@ -79,32 +79,32 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+                                <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
                             Гостиница
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="product-group" value="motel">
+                                <input class="control-input" type="radio" name="hotel-group" value="motel">
                             Мотель
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="product-group" value="apartments">
+                                <input class="control-input" type="radio" name="hotel-group" value="apartments">
                             Апортаменты
                             </label>
                         </li>
                     </ul>
                 </fieldset>
                 <button class="button" type="submit">Применить</button><br>
-                <button class="reset" type="submit">Сбросить</button>
+                <button class="reset" type="reset">Сбросить</button>
             </form>
             <span>Найдено гостиниц: 38</span>
             <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Сначала популярное</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap" selected>Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
             </select>
             <a class="button" href="#">
                 <span class="visually-hidden">По цене</span>
@@ -123,8 +123,8 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 4000 ₽</span><br>
-                    <button class="button" type="submit">Подробнее</button>
-                    <a class="favourites" href="#">В избранное</a><br>
+                    <button class="for-details" type="submit">Подробнее</button>
+                    <button class="favorites" type="submit">В избранное</button><br>
                     <img class="stars" src="" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 8,5</span>
                 </li>
@@ -135,8 +135,8 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 3000 ₽</span><br>
-                    <button class="button" type="submit">Подробнее</button>
-                    <a class="favourites" href="#">В избранное</a><br>
+                    <button class="for-details" type="submit">Подробнее</button>
+                    <button class="favorites" type="submit">В избранное</button><br>
                     <img class="stars" src="" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 8,9</span>
                 </li>
@@ -147,8 +147,8 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 2000 ₽</span><br>
-                    <button class="button" type="submit">Подробнее</button>
-                    <a class="in-favourites" href="#">В избранном</a><br>
+                    <button class="for-details" type="submit">Подробнее</button>
+                    <button class="in-favorites" type="submit">В избранном</button><br>
                     <img class="stars" src="" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 9,2 </span>
                 </li>
@@ -159,29 +159,48 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 3000 ₽</span><br>
-                    <button class="button" type="submit">Подробнее</button>
-                    <a class="favourites" href="#">В избранное</a><br>
+                    <button class="for-details" type="submit">Подробнее</button>
+                    <button class="favorites" type="submit">В избранное</button><br>
                     <img class="stars" src="" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 9,2 </span>
-                </li>
-
-                
+                </li>              
             </ul>
+            <ul>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li> 
+              </ul>
+              <span class="page-hotels">Гостиниц на старнице:</span>
+              <select class="select-hotels" aria-label="Сортировка гостинц">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>              
+              </select>                                      
         </section>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="page-footer">
+ <footer class="page-footer">
         <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама,
