@@ -8,8 +8,8 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип Седоны" src="">
-        </a>
+            <img class="page-header-logo" src="images/mini-logos/logo-main.svg" width="139" height="70" alt="Логотип Седоны">
+          </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -18,27 +18,26 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Лайк</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
+        <div class="navigation-user">
+            <a class="navigation-user-link" href="#"><span class="visually-hidden">Поиск</span>
+              <img class="header-search" src="images/mini-logos/logo-search.svg" width="18,05" height="18,1" alt="Логотип лупы поиска">
+            </a>           
+            <a class="navigation-user-link" href="#"><span class="visually-hidden">Лайк</span>
+              <img class="header-like" src="images/mini-logos/logo-favorite.svg" width="18,05" height="17" alt="Иконка лайка">
+            </a>         
+            <a class="navigation-user-link" href="#">Хочу сюда!</a>         
+        </div>
       </nav>
     </header>
     
     <main class="main-index">
-      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img class="logo" src="" alt="Логотип приветствия Седоны">
-
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>   
+      <img class="welcome" src="images/welcome.svg" width="187,7" height="44,7" alt="Добро пожаловать"> 
+      <img class="to-the-georgeous" src="images/to-the-gergeous.svg" width="256" height="28,78" alt="в Джорджию">
+      <img class="sedona-main-logo" src="images/sedona.svg" width="456,7" height="212,77" alt="Седона">
       <section class="divider">
         <h2><b>Седона — небольшой городок в Аризоне,
           заслуживающий большего!</b></h2>
@@ -52,7 +51,7 @@
             <span class="advantages-number">— №1 —</span>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт 
                   своя жизнь</p>
-            <img class="photo-1" src="" alt="Двухэтажный домик среди цветущих деревьев">         
+            <img class="photo-1" src="images/advantages-photo.jpg" width="800" height="384" alt="Двухэтажный домик среди цветущих деревьев">         
         </div>                              
       </section>
       <section class="sub-menu">
@@ -62,19 +61,19 @@
             <h3 class="sub-menu-title">Жильё</h3>
             <p class="sub-menu-description">Рекомендуем пожить 
               в настоящем мотеле, всё как в кино!</p>
-              <img class="mini-logo" src="" alt="Логотип домика">
+              <img class="mini-logo" src="images/mini-logos/logo-house.svg" width="74,7" height="72" alt="Логотип домика">
           </li>
           <li class="sub-menu-item">
             <h3 class="sub-menu-title">Еда</h3>
             <p class="sub-menu-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
-              <img class="mini-logo-2" src="" alt="Логотип бургера">
+              <img class="mini-logo-2" src="images/mini-logos/logo-burger.svg" width="73,81" height="70" alt="Логотип бургера">
           </li>
           <li class="sub-menu-item">
             <h3 class="sub-menu-title">Сувениры</h3>
             <p class="sub-menu-description">Не только китайского, 
               но и настоящего местного производства!</p>
-              <img class="mini-logo-3" src="" alt="Логотип подарка">
+              <img class="mini-logo-3" src="images/mini-logos/logo-present.svg" width="64" height="75,95" alt="Логотип подарка">
           </li>         
         </ul>
       </section>
@@ -85,7 +84,7 @@
                 мост дьявола</h3>           
             <span class="advantages-number">— №2 —</span>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="photo-2" src="" alt="Мост Дьявола в каньоне">
+            <img class="photo-2" src="images/advantages-photo-2.jpg" width="800" height="384" alt="Мост Дьявола в каньоне">
         </div>
       </section>
       <section class="advantages-3">
@@ -137,23 +136,26 @@
           <li class="footer-social-item">
             <a class="button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
+              <img class="youtube" src="images/social-networks/twitter.svg" width="18" height="14,96" alt="Логотип Твиттер">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="http://facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
+              <img class="youtube" src="images/social-networks/facebook.svg" width="10" height="18" alt="Логотип Фейсбук">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Ютуб</span>
+              <img class="youtube" src="images/social-networks/youtube.svg" width="20,1" height="16" alt="Логотип Ютуб">
             </a>
           </li>
           <li class="contacts">
             <span class="phone-number">+7 (812) 812-12-12</span>
           </li>
           <li class="cite-logo">
-            <img src="" alt="Логотип HTML Академии">
+            <img src="images/html-academy.svg" width="114,9" height="72,9" alt="Логотип HTML Академии">
           </li>
         </ul>
       </section>
