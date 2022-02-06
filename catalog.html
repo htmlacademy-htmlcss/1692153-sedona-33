@@ -24,31 +24,28 @@
         </ul>
         <div class="navigation-user">
             <a class="navigation-user-link" href="#"><span class="visually-hidden">Поиск</span>
-              <img class="header-search" src="images/mini-logos/logo-search.svg" width="18,05" height="18,1" alt="Логотип лупы поиска">
+              <img class="header-search" src="images/mini-logos/logo-search.svg" width="18" height="18" alt="Логотип лупы поиска">
             </a>           
             <a class="navigation-user-link" href="#"><span class="visually-hidden">Лайк</span>
-              <img class="header-like" src="images/mini-logos/logo-favorite.svg" width="18,05" height="17" alt="Иконка лайка">
+              <img class="header-like" src="images/mini-logos/logo-favorite.svg" width="18" height="17" alt="Иконка лайка">
             </a>         
-            <a class="navigation-user-link" href="#">Хочу сюда!</a>         
+            <button class="button header-button" href="#">Хочу сюда!</button>         
         </div>
       </nav>
     </header>
-    <main class="main-inner">
-        <header class="inner-header">
+    <main class="main-inner">       
+          <section class="catalog-hotels">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
-                      <img class="breacrumbs-logo" src="images/mini-logos/logo-trumbs.svg" width="12" height="11,7" alt="Логотип домика">                     
+                      <img class="breacrumbs-logo" src="images/mini-logos/logo-trumbs.svg" width="12" height="11" alt="Логотип домика">                     
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
-            </ul>
-          </header>
-
-          <section class="catalog-hotels">
+            </ul>                 
             <h2 class="visually-hidden">Список отелей с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
@@ -73,8 +70,7 @@
                             </label>
                         </li>
                     </ul>
-                </fieldset>
-    
+                </fieldset>             
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Тип жилья:</legend>
                     <ul class="catalog-filter-list">
@@ -98,9 +94,10 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button class="button" type="submit">Применить</button><br>
+                <button class="button light-blue-button" type="submit">Применить</button><br>
                 <button class="reset" type="reset">Сбросить</button>
             </form>
+          </section>    
             <div class="hotel-search">
               <span class="hotels-found">Найдено гостиниц: 38</span>
               <select class="select-control" aria-label="Сортировка">
@@ -108,18 +105,18 @@
                 <option value="cheap" selected>Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
-              <a class="button" href="#">
+              <button class="button sorting" href="#">
                 <span class="visually-hidden">По цене</span>
                 <img class="by-price" src="images/by-price.svg" width="16" height="14" alt="Сортировка по цене">
-              </a>
-              <a class="button" href="#">
+              </button>
+              <button class="button sorting" href="#">
                 <span class="visually-hidden">По типу</span>
                 <img class="by-price" src="images/by-type.svg" width="16" height="14" alt="Сортировка по типу">
-              </a>
-              <a class="button" href="#">
+              </button>
+              <button class="button sorting" href="#">
                 <span class="visually-hidden">По рейтингу</span>
                 <img class="by-price" src="images/by-rating.svg" width="16" height="14" alt="Сортировка по рейтингу">
-              </a>
+              </button>
             </div>
             <ul class="hotel-list">
                 <li class="hotel-card">
@@ -129,8 +126,8 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 4000 ₽</span>
-                    <button class="for-details" type="submit">Подробнее</button>
-                    <button class="favorites" type="submit">В избранное</button>
+                    <button class="button" type="submit">Подробнее</button>
+                    <button class="button favorites light-blue-button" type="submit">В избранное</button>
                     <img class="stars" src="images/stars-4.svg"  width="91" height="17" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 8,5</span>
                 </li>
@@ -141,8 +138,8 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 3000 ₽</span>
-                    <button class="for-details" type="submit">Подробнее</button>
-                    <button class="favorites" type="submit">В избранное</button>
+                    <button class="button" type="submit">Подробнее</button>
+                    <button class="button favorites light-blue-button" type="submit">В избранное</button>
                     <img class="stars" src="images/stars-3.svg" width="68" height="17" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 8,9</span>
                 </li>
@@ -153,8 +150,8 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 2000 ₽</span>
-                    <button class="for-details" type="submit">Подробнее</button>
-                    <button class="in-favorites" type="submit">В избранном</button>
+                    <button class="button" type="submit">Подробнее</button>
+                    <button class="button in-favorites" type="submit">В избранном</button>
                     <img class="stars" src="images/stars-2.svg" width="43" height="17" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 9,2 </span>
                 </li>
@@ -165,12 +162,15 @@
                     </a>
                     <span class="hotel">Гостиница</span>
                     <span class="price">От 3000 ₽</span>
-                    <button class="for-details" type="submit">Подробнее</button>
-                    <button class="favorites" type="submit">В избранное</button>
+                    <button class="button" type="submit">Подробнее</button>
+                    <button class="button favorites light-blue-button" type="submit">В избранное</button>
                     <img class="stars" src="images/stars-2.svg" width="43" height="17" alt="Звездочки рейтинга">
                     <span class="rating">Рейтинг: 9,2 </span>
                 </li>              
             </ul>
+            <div class="load-more">
+            <button class="button light-blue-button" type="submit">Загрузить ещё</button>
+            </div>
             <ul>
               <li class="pagination-item">
                 <a class="pagination-link pagination-current" href="#">1</a>
@@ -216,35 +216,35 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="email"></label>
           <input type="email" name="email" id="email" placeholder="Вашь e-mail">
-          <button class="submit" type="submit">Подписаться</button>
+          <button class="submit light-blue-button" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="footer-social">
         <h2 class="footer-social-title">Социальный сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <a class="" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
-              <img class="youtube" src="images/social-networks/twitter.svg" width="18" height="14,96" alt="Логотип Твиттер">
+              <img class="youtube" src="images/social-networks/twitter.svg" width="18" height="14" alt="Логотип Твиттер">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="http://facebook.com/htmlacademy">
+            <a class="" href="http://facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
               <img class="youtube" src="images/social-networks/facebook.svg" width="10" height="18" alt="Логотип Фейсбук">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <a class="" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Ютуб</span>
-              <img class="youtube" src="images/social-networks/youtube.svg" width="20,1" height="16" alt="Логотип Ютуб">
+              <img class="youtube" src="images/social-networks/youtube.svg" width="20" height="16" alt="Логотип Ютуб">
             </a>
           </li>
           <li class="contacts">
             <span class="phone-number">+7 (812) 812-12-12</span>
           </li>
           <li class="cite-logo">
-            <img src="images/html-academy.svg" width="114,9" height="72,9" alt="Логотип HTML Академии">
+            <img src="images/html-academy.svg" width="114" height="72" alt="Логотип HTML Академии">
           </li>
         </ul>
       </section>

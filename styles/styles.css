@@ -22,12 +22,12 @@ body {
     background-color: #ffffff;
   }
 
-.header-button {
+.button {
     font-family: inherit;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -35,18 +35,45 @@ body {
     border-radius: 4px;
 }
 
-.search-button {
+.header-button {     
+    line-height: 21px;   
+}
+
+.search-button {   
+    font-size: 20px;
+    line-height: 36px;    
+}
+
+.light-blue-button {
+    background-color: #83B3D3;
+}
+
+.submit {
     font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
-    background-color: #756257;
-    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #83B3D3;
 }
+
+.sorting {
+    background-color: #E5E5E5;
+}
+
+.in-favorites {
+    background-color: #7DB54F;
+}
+
+.subscribe {
+    font-size: 20px;
+    line-height: 26px;
+    
+}
+
 
 .page-header {   
     color: #000000;
@@ -63,7 +90,18 @@ body {
     text-decoration: none;
 }
 
-.main-index {
+.hotel-card-link {
+font-family: inherit;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 31px;
+color: #000000;
+text-decoration: none;
+
+}
+
+.main-welcome{
     background-image: url("../images/main-background.jpg"); 
     color: #333333;
     background-size: 100% auto;  
@@ -71,16 +109,11 @@ body {
 }
 
 .divider {
-    text-align: center;
-   
+    text-align: center;  
 }
 
-.divider-title {
-    text-transform: uppercase;
-}
 
-.sub-menu-list,
-.advantages-list {
+ul {
     list-style-type: none;
 }
 
@@ -126,10 +159,58 @@ body {
 
 }
 
-.page-footer {
+.catalog-hotels {
+    background-image: url("../images/turbid-background-2.jpg");
+    background-size: 100% auto;  
+    background-repeat: no-repeat;
+}
+
+.hotel-card-title {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.load-more {
+    text-align: center;
+}
+
+
+.pagination-link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.page-footer-main {
     text-align: center;
     background-image: url("../images/turbid-background.jpg"); 
     color: #ffffff;
     background-size: 100% auto;  
     background-repeat: no-repeat;
+}
+
+.footer-social {
+    background-color: #ffffff;
+}
+
+.page-footer {
+    text-align: center;
 }
