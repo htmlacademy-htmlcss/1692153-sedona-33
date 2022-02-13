@@ -14,7 +14,15 @@
     font-display: swap;
   }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -80,6 +88,106 @@ body {
     background-color: #E5E5E5;
 }
 
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 445px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.main-welcome {
+    height: 485px;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-menu-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.advantages-1,
+.advantages-2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+
+.advantages-item,
+.sub-menu-item {
+    width: 400px;
+    height: 384px;
+  }
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome {
+    display: block;
+    margin: 0 auto;
+}
+
+.to-the-georgeous {
+    display: block;
+    margin: 0 auto;
+}
+
+.sedona-main-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.divider {
+    height: 282px;
+    justify-content: space-between;
+}
+
+.divider-title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.divider-paragraph {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .navigation-link {
     font-size: 20px;
     line-height: 26px;
@@ -101,6 +209,12 @@ text-decoration: none;
 
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+
+
 .main-welcome{
     background-image: url("../images/main-background.jpg"); 
     color: #333333;
@@ -108,9 +222,7 @@ text-decoration: none;
     background-repeat: no-repeat;
 }
 
-.divider {
-    text-align: center;  
-}
+
 
 
 ul {
@@ -199,7 +311,9 @@ ul {
     background-color: #F2F2F2;
 }
 
-.page-footer-main {
+
+
+.subscribe-main {
     text-align: center;
     background-image: url("../images/turbid-background.jpg"); 
     color: #ffffff;
@@ -214,3 +328,10 @@ ul {
 .page-footer {
     text-align: center;
 }
+
+.page-footer-container {
+    display: flex;
+  width: 940px;
+  margin: 0 auto;   
+}
+
