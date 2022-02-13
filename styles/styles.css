@@ -191,8 +191,7 @@ body {
     line-height: 26px;
     font-weight: 700;
     text-align: center;
-    color: #000000;
-    background-color: #E5E5E5;
+    color: #000000;  
     text-decoration: none;
 }
 
@@ -267,14 +266,6 @@ ul {
     text-transform: uppercase;
     color: #000000;
 
-}
-
-.catalog-hotels {
-    
-    background-image: url("../images/turbid-background-2.jpg");
-    background-size: 100% auto;  
-    background-repeat: no-repeat;
-    color: #FFFFFF;
 }
 
 
@@ -358,13 +349,32 @@ ul {
     margin-right: 72px;
 }
 
-.catalog-background {
+
+.catalog-hotels {
     
-    
+    background-image: url("../images/turbid-background-2.jpg");
+    background-size: 100% auto;  
+    background-repeat: no-repeat;
     color: #FFFFFF;
 }
 
+.filters {
+    display: flex;   
+}
 
+.checkbox-filter {
+    width: 150px;
+    margin-left: 71px;
+    margin-right: 67px;
+}
+
+.radio-filter {
+    width: 220px;
+    margin-right: 167px;
+
+}
+
+.
 
 .hotel-sorting {
    display: flex;
