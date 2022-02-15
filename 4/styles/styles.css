@@ -1,0 +1,387 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+
+.button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #756257;
+    border-radius: 4px;
+}
+
+.header-button {     
+    line-height: 21px;   
+}
+
+.search-button {   
+    font-size: 20px;
+    line-height: 36px;    
+}
+
+.light-blue-button {
+    background-color: #83B3D3;
+}
+
+.submit {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}
+
+.sorting {
+    background-color: #E5E5E5;
+}
+
+.in-favorites {
+    background-color: #7DB54F;
+}
+
+
+
+
+.page-header {   
+    color: #000000;
+    
+}
+
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 445px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.page-header-logo {
+    width: 130px;
+    margin-right: 30px;
+    margin-left: 70px;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-menu-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.advantages-1,
+.advantages-2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+
+.advantages-item,
+.sub-menu-item {
+    width: 400px;
+    
+  }
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome {
+    display: block;
+    margin: 0 auto;
+}
+
+.to-the-georgeous {
+    display: block;
+    margin: 0 auto;
+}
+
+.sedona-main-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.divider {
+    
+    justify-content: space-between;
+}
+
+.divider-title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.divider-paragraph {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;  
+    text-decoration: none;
+}
+
+.hotel-card-link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+
+
+.main-welcome{
+    background-image: url("../images/main-background.jpg"); 
+    color: #333333;
+    background-size: 100% auto;  
+    background-repeat: no-repeat;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.advantages-item,
+.sub-menu-item {
+    text-align: center;   
+}
+
+.advantages-title,
+.sub-menu-title,
+.divider-title {
+    font-size: 24px;
+    line-height: 28px;  
+    color: #000000;
+}
+
+.color-white {
+    background-color: #83B3D3;
+    color: #ffffff;
+}
+
+.background-light-blue {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.background-dark-light-blue {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.search {
+    text-align: center;
+}
+
+.phone-number {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+
+
+.hotel-card-title {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.load-more {
+    text-align: center;
+}
+
+
+.pagination-link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+
+
+.subscribe-main {   
+    background-image: url("../images/turbid-background.jpg"); 
+    color: #ffffff;
+    background-size: 100% auto;  
+    background-repeat: no-repeat;
+}
+
+.subscribe {  
+    font-size: 20px;
+    line-height: 26px;   
+    text-align: center;
+}
+
+.footer-social {
+    background-color: #ffffff;
+}
+
+
+
+.page-footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;   
+}
+
+.footer-social-list {
+    width: 107px;
+    margin-left: 72px;
+    margin-right: 70px;
+
+}
+
+.contacts {
+    width: 720px;
+    margin-right: 70px;
+}
+
+.cite-logo {
+    width: 115px;
+    margin-right: 72px;
+}
+
+
+.catalog-hotels {
+    
+    background-image: url("../images/turbid-background-2.jpg");
+    background-size: 100% auto;  
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.filters {
+    display: flex;   
+}
+
+.checkbox-filter {
+    width: 150px;
+    margin-left: 71px;
+    margin-right: 67px;
+}
+
+.radio-filter {
+    width: 220px;
+    margin-right: 167px;
+
+}
+
+.
+
+.hotel-sorting {
+   display: flex;
+   
+}
+
+.hotel-card {
+    width: 340px;
+    margin-right: 18px;
+}
