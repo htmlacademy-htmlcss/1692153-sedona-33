@@ -142,6 +142,8 @@ body {
     height: 37px;
     line-height: 21px;  
     margin-left: 32px;
+    margin-top: 14px;
+    
     
 }
 
@@ -386,10 +388,13 @@ ul {
 }
 
 .subscribe {  
+    
     font-size: 20px;
     line-height: 26px;   
     text-align: center;
 }
+
+
 
 
 .subscribe-title {
@@ -440,10 +445,6 @@ ul {
     color: #000000;
 
 }
-
-
-
-
 
 
 
@@ -590,6 +591,7 @@ ul {
     font-family: inherit;
     width: 55px;
     height: 55px;
+    padding: 14px 20px;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -603,20 +605,6 @@ ul {
 }
 
 
-/*.pagination-link {
-    display: block;
-    box-sizing: border-box;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    line-height: 26px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #83B3D3;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-  */
 
 .pagination-current {
     color: #000000;
@@ -627,7 +615,7 @@ ul {
 .hotel-selection {
     display: flex;
     margin-left: 300px;
-    padding-top:
+    
 
 }
 
@@ -640,6 +628,8 @@ ul {
 .select-hotels {
     width: 160px;
     height: 48px;
+    margin-top: 33px;
+    
     
 }
 
