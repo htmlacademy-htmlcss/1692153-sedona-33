@@ -634,9 +634,6 @@ ul {
 }
 
 
-
-
-
 .catalog-hotels {
     
     background-image: url("../images/turbid-background-2.jpg");
@@ -661,14 +658,75 @@ ul {
 
 }
 
-.
 
-.hotel-sorting {
-   display: flex;
-   
+.hotel-list {
+    display: grid;
+    grid-template-columns: repeat(3, 300px); 
+    column-gap: 18px;
+    row-gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 53px;
+    margin-bottom: 64px;
+    padding: 0;
+    padding-right: 72px;
+    padding-left: 72px;
 }
 
 .hotel-card {
-    width: 340px;
-    margin-right: 18px;
+    display: flex;
+    flex-wrap: wrap;   
+
 }
+
+.hotel-card-content {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-right: 26px;
+    padding: 20px;
+    padding-top: 16px;
+}
+
+.hotel-card-content:nth-child(2n) {
+    margin: 0;
+}
+
+.hotel {
+    margin-right: 25px;
+    margin-bottom: 16px;
+}
+
+.price {
+    margin-bottom: 16px;
+}
+
+.stars-4 {
+    margin-right: 49px;
+}
+
+.stars-3 {
+    margin-right: 72px;
+}
+
+.stars-2 {
+    margin-right: 97px;
+}
+
+.stars-2 {
+    margin-right: 97px;
+}
+
+.hotel-card-button {
+    margin-bottom: 26px;
+    margin-right: auto;
+    
+}
+
+.hotel-card-button-favorites {
+    margin-left: 0;
+    margin-left: auto;
+    margin-bottom: 26px;
+}
+
+
+
