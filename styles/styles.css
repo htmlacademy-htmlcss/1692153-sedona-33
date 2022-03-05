@@ -45,6 +45,7 @@ body {
 /* Buttons */
 
 .button {
+    display: inline-block;
     font-family: inherit;
     font-style: normal;
     font-weight: bold;
@@ -54,14 +55,21 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #756257;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
 
 .search-button {   
+    width: 575px;
+    height: 60px;
     font-size: 20px;
-    line-height: 36px;    
+    line-height: 36px; 
+    padding-top: 15px;
+    padding-bottom: 15px;  
+    border-radius: 10px; 
 }
 
 .light-blue-button {
@@ -78,6 +86,29 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #83B3D3;
+}
+
+.apply {
+    width: 160px;
+    height: 48px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.reset {
+    width: 160px;
+    height: 23px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
 }
 
 .sorting {
@@ -143,6 +174,7 @@ body {
     line-height: 21px;  
     margin-left: 32px;
     margin-top: 14px;
+    padding: 9px 15px;
     
     
 }
@@ -288,6 +320,13 @@ body {
     padding-right: 240px;
     padding-left: 240px;
     margin-bottom: 31px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .divider-paragraph {
@@ -298,6 +337,13 @@ body {
     padding-right: 240px;
     padding-left: 240px;
     padding-bottom: 80px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
 }
 
 
@@ -380,6 +426,9 @@ ul {
     padding-bottom: 93px;
 }
 
+
+/*subscribe*/
+
 .subscribe-main {   
     background-image: url("../images/turbid-background.jpg"); 
     color: #ffffff;
@@ -393,8 +442,6 @@ ul {
     line-height: 26px;   
     text-align: center;
 }
-
-
 
 
 .subscribe-title {
@@ -454,7 +501,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 107px;
-    margin-left: 72px;
+    
     margin-right: 70px;
     padding-top: 49px;
     padding-left: 72px;
@@ -551,9 +598,18 @@ ul {
 .button-sorting {
     margin-right: 8px;
     background-color: #FFFFFF;
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
+.button-sorting-chosen {
+    border-color: #000000;
+}
 
+.help-button {
+
+}
 
 .hotel-card-title {
     text-decoration: none;
@@ -567,6 +623,11 @@ ul {
 
 .load-more {
     text-align: center;
+}
+
+.load-more-button {
+    width: 620px;
+    height: 60px;
 }
 
 .pagination-container {
@@ -659,10 +720,11 @@ ul {
 }
 
 
+
 .hotel-list {
     display: grid;
     grid-template-columns: repeat(3, 300px); 
-    column-gap: 18px;
+    column-gap: 58px;
     row-gap: 10px;
     list-style-type: none;
     margin: 0;
@@ -671,11 +733,24 @@ ul {
     padding: 0;
     padding-right: 72px;
     padding-left: 72px;
+    
+}
+
+.hotel-card-image {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.hotel-card-title {
+    padding-left: 20px;
 }
 
 .hotel-card {
     display: flex;
     flex-wrap: wrap;   
+    width: 340px;
 
 }
 
@@ -691,8 +766,10 @@ ul {
     margin: 0;
 }
 
+
+
 .hotel {
-    margin-right: 25px;
+    margin-right: 72px;
     margin-bottom: 16px;
 }
 
@@ -700,8 +777,9 @@ ul {
     margin-bottom: 16px;
 }
 
+
 .stars-4 {
-    margin-right: 49px;
+    margin-right: 72px;
 }
 
 .stars-3 {
@@ -712,21 +790,37 @@ ul {
     margin-right: 97px;
 }
 
-.stars-2 {
-    margin-right: 97px;
-}
+
 
 .hotel-card-button {
     margin-bottom: 26px;
     margin-right: auto;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    width: 133px;
+    height: 18;
     
 }
 
 .hotel-card-button-favorites {
+    
     margin-left: 0;
     margin-left: auto;
-    margin-bottom: 26px;
+    margin-bottom: 16px;
+    padding-top: 9px;
+    padding-bottom: 30px;
+    width: 140px;
+    height: 18px;
 }
 
+.rating {
+    
+    width: 160px;
+    margin-left: auto;
+    padding: 10px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+   
+}
 
 

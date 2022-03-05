@@ -47,6 +47,7 @@
                     <a class="breadcrumbs-link" href="index.html">
                       <img class="breadcrumbs-logo" src="images/mini-logos/logo-trumbs.svg" width="12" height="11" alt="Логотип домика">                     
                     </a>
+                    
                 </li>
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
@@ -109,7 +110,7 @@
             </fieldset>
           </section>  
           <div class="filter-bottom">
-            <button class="button light-blue-button" type="submit">Применить</button><br>
+            <button class="button light-blue-button apply" type="submit">Применить</button><br>
             <button class="reset" type="reset">Сбросить</button>
           </div> 
         </form>
@@ -124,7 +125,7 @@
             <option value="cheap" selected>Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <button class="button button-sorting" href="#">
+          <button class="button button-sorting button-sorting-chosen" href="#">
             <span class="visually-hidden">По цене</span>
             <img class="by-price" src="images/by-price.svg" width="16" height="14" alt="Сортировка по цене">
           </button>
@@ -144,11 +145,12 @@
                     <img class="hotel-card-image" src="images/catalog/amara-resort.jpg" width="300" height="206" alt="Отель в горе среди деревьев">
                     <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
-                <div class="hotel-card-content">
-                <span class="hotel">Гостиница</span>
-                <span class="price">От 4000 ₽</span>
+                <div class="hotel-card-content">              
+                  <span class="hotel">Гостиница</span>
+                  <span class="price">От 4000 ₽</span>                             
                 <button class="button hotel-card-button" type="submit">Подробнее</button>
                 <button class="button hotel-card-button-favorites light-blue-button" type="submit">В избранное</button>
+                
                 <img class="stars-4" src="images/stars-4.svg"  width="91" height="17" alt="Звездочки рейтинга">
                 <span class="rating">Рейтинг: 8,5</span>
                 </div>
@@ -188,7 +190,7 @@
                 </a>
                 <div class="hotel-card-content">
                 <span class="hotel">Гостиница</span>
-                <span class="price">От 3000 ₽</span>
+                <span class="price">От 3000 ₽</span>           
                 <button class="button hotel-card-button" type="submit">Подробнее</button>
                 <button class="button hotel-card-button-favorites light-blue-button" type="submit">В избранное</button>
                 <img class="stars-2" src="images/stars-2.svg" width="43" height="17" alt="Звездочки рейтинга">
@@ -198,7 +200,7 @@
         </ul>
       </div>
       <div class="load-more">
-      <button class="button light-blue-button" type="submit">Загрузить ещё</button>
+      <button class="button light-blue-button load-more-button" type="submit">Загрузить ещё</button>
       </div>
       <div class="pagination-container">
       <ul class="pagination">
@@ -246,7 +248,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="email"></label>
           <input type="email" name="email" id="email" placeholder="Вашь e-mail">
-          <button class="submit light-blue-button" type="submit">Подписаться</button>
+          <button class="button submit light-blue-button" type="submit">Подписаться</button>
         </form>      
       </section>                                          
     </main>
