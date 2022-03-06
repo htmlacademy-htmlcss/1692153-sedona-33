@@ -119,6 +119,12 @@ body {
     background-color: #7DB54F;
 }
 
+.load-more {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #E6E6E6;
+    border-bottom:  1px solid #E6E6E6;
+}
 
 /*header*/
 
@@ -129,8 +135,9 @@ body {
 
 .navigation {
     display: flex;
-    width: 1060px;
+    width: 1200px;
     margin: 0 auto;
+    
 }
 
 .navigation-list {
@@ -144,7 +151,9 @@ body {
 
 .navigation-link {
     display: block;
-    padding: 20px 34px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 34px;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -152,6 +161,8 @@ body {
     color: #000000;  
     text-decoration: none;
 }
+
+
 
 .navigation-user {
     display: flex;
@@ -164,17 +175,23 @@ body {
 
 .navigation-user-link {
     display: block;
-    padding: 24px;
-    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;   
 }
+
+.navigation-user-link:last-child {
+    padding-right: 33px;
+}
+
 
 .header-button {
     width: 160px;
     height: 37px;
-    line-height: 21px;  
-    margin-left: 32px;
+    line-height: 21px;     
     margin-top: 14px;
     padding: 9px 15px;
+    margin-right: 70px;
     
     
 }
@@ -186,9 +203,35 @@ body {
 
 .page-header-logo {
     width: 130px;
-    margin-right: 30px;
+    margin-right: 47px;
+    padding-left: 70px;
     
 }
+
+.navigation-user {
+    position: relative;
+}
+
+.circle-12 {
+    position: absolute;
+    
+    width: 20px;
+    height: 20px;
+    left: 54px;
+    top: 15px;
+    border-radius: 10px;
+    background-color:#7DB54F;
+    
+    
+    font-size: 10px;
+    line-height: 13px;
+    
+    text-align: center;
+    color:#FFFFFF;
+    margin-right: 18px;
+}
+
+
 
 /* main-index*/
 
@@ -543,31 +586,42 @@ ul {
     padding-top: 35px;
     padding-left: 71px;
     margin-top: 0;
-    margin-bottom: 5px; 
+    margin-bottom: 8px; 
+    font-size: 60px;
+    line-height: 78px;
     
   }
 
 .breadcrumbs {
     display: flex;
     margin: 0;
+    padding: 0;
     margin-bottom: 75px;   
     list-style-type: none;
 }
 
 .breadcrumbs-link {
-    margin-right: 26px;
+    margin-right: 11px;
         
 }
 
 .breadcrumbs-logo {
+    
     padding-left: 73px;
 }
 
+.arrow-logo {
+    padding-right: 10px;
+    
+}
+
+/*hotal-searching*/
 .hotels-found {
     /*display: block;*/
     font: PT Sans;
     font-weight: 700;
     font-style: normal;
+    font-size: 30px;
     width: 337px;
     line-height: 39px;
     color: #000000;
@@ -601,6 +655,10 @@ ul {
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
+}
+
+.button-sorting:last-child {
+    margin-right: 0;
 }
 
 .button-sorting-chosen {
@@ -724,7 +782,7 @@ ul {
 .hotel-list {
     display: grid;
     grid-template-columns: repeat(3, 300px); 
-    column-gap: 58px;
+    column-gap: 18px;
     row-gap: 10px;
     list-style-type: none;
     margin: 0;
@@ -751,6 +809,7 @@ ul {
     display: flex;
     flex-wrap: wrap;   
     width: 340px;
+    
 
 }
 
@@ -779,7 +838,7 @@ ul {
 
 
 .stars-4 {
-    margin-right: 72px;
+    margin-right: 49px;
 }
 
 .stars-3 {
@@ -804,7 +863,7 @@ ul {
 
 .hotel-card-button-favorites {
     
-    margin-left: 0;
+    margin: 0;
     margin-left: auto;
     margin-bottom: 16px;
     padding-top: 9px;
@@ -814,10 +873,10 @@ ul {
 }
 
 .rating {
-    
+    margin-left: 0;
     width: 160px;
     margin-left: auto;
-    padding: 10px;
+    padding: ;
     background-color: #F2F2F2;
     border-radius: 4px;
    
