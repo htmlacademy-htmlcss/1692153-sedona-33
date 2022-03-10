@@ -506,6 +506,11 @@ ul {
     list-style-type: none;
 }
 
+.photo-1,
+.photo-2 {
+    display: block;
+}
+
 .advantages-item,
 .sub-menu-item {
     text-align: center;   
