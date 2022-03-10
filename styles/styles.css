@@ -747,6 +747,10 @@ ul {
         
 }
 
+.breadcrumbs-link-logo {
+    margin-left: 73px;
+}
+
 .breadcrumbs-logo:hover,
 .breadcrumbs-hotels:hover { 
     opacity: 0.6;
@@ -765,7 +769,7 @@ ul {
 .breadcrumbs-logo {
     padding: 3px;
     margin-top: 2px;
-    margin-left: 73px;
+    
     
 }
 
@@ -992,6 +996,7 @@ ul {
 .hotel-card-content {
     display: flex;
     flex-wrap: wrap; 
+    
     margin-right: 26px;
     padding: 20px;
     padding-top: 16px;
@@ -1112,7 +1117,7 @@ ul {
     opacity: 0.3;
 }
 
-.hotel-card-link:focus >.hotel-card-image{
+.hotel-card-link:focus .hotel-card-image{
     outline: 3px solid #83B3D3;
 }
 
