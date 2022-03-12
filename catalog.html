@@ -81,20 +81,23 @@
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" type="checkbox" name="pool" checked>
-                        Бассейн
+                            <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Бассейн</span>                       
                         </label>
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                         <input class="control-input" type="checkbox" name="parking" checked>
-                        Парковка
+                         <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                         <span class="control-mark"></span>
+                         <span class="control-label">Парковка</span>
                         </label>
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                         <input class="control-input" type="checkbox" name="wi-fi">
-                         Wi-Fi
+                         <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                         <span class="control-mark"></span>
+                         <span class="control-label">Wi-Fi</span>
                         </label>
                     </li>
                 </ul>
@@ -106,25 +109,60 @@
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
-                        Гостиница
+                            <input class="visually-hidden control-input" type="radio" name="hotel-group" value="hotel" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Гостиница</span>
+                        
                         </label>
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" type="radio" name="hotel-group" value="motel">
-                        Мотель
+                            <input class="visually-hidden control-input" type="radio" name="hotel-group" value="motel">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Мотель</span>
+                        
                         </label>
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" type="radio" name="hotel-group" value="apartments">
-                        Апортаменты
+                            <input class="visually-hidden control-input" type="radio" name="hotel-group" value="apartments">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Апортаменты</span>
+                        
                         </label>
                     </li>
                 </ul>
             </fieldset>
           </section>  
+          
+            <fieldset class="catalog-filter-group">
+              <!--<legend class="catalog-filter-title">Стимость,₽:</legend> -->
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="0" name="min-price"> от
+                  </label>
+                  <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="9000" name="max-price" style="width: 37px"> до
+                  </label>
+                </div>
+
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 196px">
+                    <button type="button" class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                  
+                 
+              
+            </div>
+            </fieldset>
+          
           <div class="filter-bottom">
             <button class="button light-blue-button apply" type="submit">Применить</button><br>
             <button class="reset" type="reset">Сбросить</button>
@@ -259,14 +297,14 @@
       </div> 
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама,
-          честное бойскаутское!</p>       
+        <p class="subscribe-description">Только полезная информация и никакого спама,<br>
+          честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="Вашь e-mail">
-          <button class="button submit light-blue-button" type="submit">Подписаться</button>
-        </form>      
-      </section>                                          
+          <input class="field" type="email" name="email" id="email" placeholder="Вашь e-mail">
+          <button class="email-button submit light-blue-button" type="submit">Подписаться</!--b>
+        </form>
+      </section>                                       
     </main>
 
     

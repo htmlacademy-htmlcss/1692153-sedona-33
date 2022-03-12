@@ -578,19 +578,89 @@ ul {
     padding-top: 94px;
     margin: 0;
     margin-bottom: 29px;
+    font: inherit;
+    font-weight: 700px;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
     
 }
 
 .subscribe-description {
     margin: 0;
     margin-bottom: 46px;
+    font: inherit;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    
 }
 
 .subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     padding-bottom: 94px;
     
 }
 
+.field {
+    margin: 0;
+    padding: 0;
+    padding-left: 22px;
+    padding-right: 19px;
+    width: 600px;
+    height: 60px;
+    font: inherit;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #F2F2F2; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.field:hover {
+    background-color: #E6E6E6;
+}
+
+.field:disabled{
+    outline: 2px solid #FF5757;
+}
+
+.field:focus {
+    outline: 3px solid #68A2CA;
+    
+}
+
+
+.email-button {   
+    padding: 0;   
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.email-button:hover {
+    background-color: #68A2CA;
+}
+
+.email-button:active{
+    color:rgba(255, 255, 255, 0.3);
+}
+
+.email-button:focus {
+    outline: 3px solid #615048;
+    
+}
+    
+            
 /*footer*/
 
 .page-footer-container {
@@ -787,6 +857,147 @@ ul {
     margin: 2px;
     
 }
+
+/*forms*/
+.control {
+    position: relative;
+    display: block;
+    padding-right: 36px;
+    margin-bottom: 19px;
+    
+  }
+
+.control-mark {
+    position: absolute;  
+    width: 20px;
+    height: 20px;  
+    left: -36px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.control:hover .control-mark {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    background-color: url("../images/tick.svg");
+    content: "";
+}
+
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+  }
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    border-radius: 50%;
+    content: "";
+}
+/*range*/
+.range-scale {
+    position: relative;
+    height: 4px;  
+    margin-top: 32px;
+    margin-bottom: 94px;
+    background-color: #333333;
+    
+   
+}
+
+.range-bar {
+    position: absolute;    
+    height: 4px;
+    
+    background-color: #FFFFFF;
+    
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.range-toggle:hover {
+    background-color: #FFFFFF;
+  }
+
+  
+
+.range-toggle:active {
+    outline: 2px solid #83B3D3;
+  }
+
+.range-toggle:focus {
+    outline: 3px solid #83B3D3;
+  }
+
+  .toggle-min {
+    top: -8px;
+    left: -10px;
+  }
+ 
+  .toggle-max {
+    top: -8px;
+    right: -20px;
+  }
+
+
+.range-wrapper-inputs {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.catalog-filter-label {
+    
+    display: flex;
+    
+  }
+
+.range-input {
+    width: 186px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    font: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    appearance: textfield;
+}
+
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+
+
+.filter-bottom {
+    margin-left: auto;
+}
+
+.catalog-filter-group {
+    margin: 0;
+    
+    padding: 0;
+    border: none;
+  }
 
 /*hotal-searching*/
 .hotels-found {
